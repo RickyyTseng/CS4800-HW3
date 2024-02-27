@@ -1,0 +1,23 @@
+@startuml
+
+object "<u>ship:Ship" as ship {
+    name = Ship
+    year = 1956
+}
+
+object "<u>cruiseShip:cruiseShip" as cruiseship {
+    name = CruiseShip
+    year = 2002
+    maxPassengers = 6243
+}
+
+object "<u>cargoShip:cargoShip" as cargoship  {
+    name = CargoShip
+    year = 2011
+    cargoCapacity = 87234
+}
+
+ship --|> cruiseship
+ship --|> cargoship
+
+@enduml
